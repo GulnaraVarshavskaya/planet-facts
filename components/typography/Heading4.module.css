@@ -1,0 +1,17 @@
+.heading4 {
+    color: rgba(255, 255, 255, 1);
+    font-family: "League Spartan";
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 0.73px;
+    text-transform: uppercase; 
+}
+
+@media (min-width: 1440px) {
+    .heading4 {
+        font-size: 11px;
+        line-height: 25px;
+        letter-spacing: 1px;      
+    }
+}

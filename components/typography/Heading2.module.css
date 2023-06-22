@@ -1,0 +1,25 @@
+.heading2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Antonio";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.75px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .heading2 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.9px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .heading2 {
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: -1.5px;    
+    }
+}

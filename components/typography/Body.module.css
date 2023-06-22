@@ -1,0 +1,14 @@
+.body {
+    color: rgba(255, 255, 255, 1);
+    font-family: "League Spartan";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+@media (min-width: 1440px) {
+    .body {
+        font-size: 14px;
+        line-height: 25px;     
+    }
+}
