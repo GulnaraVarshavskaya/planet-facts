@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Button from "./Button";
+import styles from "./Switcher.module.css"
 
 type SwitcherProps = {
   planet: "venus" | "earth" | "mars";
   selectedElement: "01" | "02" | "03";
 };
+
 const Switcher = ({ selectedElement, planet }: SwitcherProps) => {
   return (
-    <>
+    <div className={styles.switcherContainer}>
       <Button
         selectedElement={selectedElement}
         count="01"
@@ -43,7 +45,7 @@ const Switcher = ({ selectedElement, planet }: SwitcherProps) => {
       >
         Surface Geology
       </Button>
-    </>
+    </div>
   );
 };
 

@@ -1,12 +1,12 @@
 import Heading4 from "../typography/Heading4";
-import styles from "./Navbar.module.css";
+import styles from "./DesktopNavbar.module.css";
 
 type Link = {
     name: string;
     href: string;
 };
 
-const Links: React.FC<{}> = ({}) => {
+const DesktopNavbar: React.FC<{}> = ({}) => {
     const links = [
         {
           name: "mercury",
@@ -54,15 +54,4 @@ const Links: React.FC<{}> = ({}) => {
     )
 }
 
-const Navbar: React.FC<{}> = ()  => {
-  return (
-    <nav className={styles.navbarContainer}>
-      <div className={styles.logoContainer}>
-        <span>The planets</span>
-      </div>
-      <Links />
-    </nav>
-  );
-};
-
-export default Navbar;
+export default DesktopNavbar;

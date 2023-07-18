@@ -1,0 +1,18 @@
+.hamburgerContainer {
+    z-index: 99;
+}
+
+.hamburgerButton {
+    vertical-align: middle;
+    border: none;
+    background: none;
+    height: 17px;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .hamburgerContainer {
+        display: none;
+    }
+}

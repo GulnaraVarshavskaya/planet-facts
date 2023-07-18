@@ -1,0 +1,18 @@
+.switcherContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 68px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+    .switcherContainer {
+        display: block;
+        position: static;
+        border-bottom: 1px solid transparent;
+    }
+}

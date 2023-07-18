@@ -3,10 +3,9 @@
     border: none;
     border-bottom: 4px solid transparent;
     width: 80px;
-    height: 52px;
-    padding: 16px 6px;
+    height: 100%;
+    padding: 20px 0;
     background: transparent;
-    margin-bottom: 16px;
 }
 
 .active {
@@ -25,13 +24,17 @@
     display: none;
 }
 
-.switcherButtonText {
+.switcherButtonTextMobile {
     color: #FFFFFF;
     font-size: 9px;
     font-family: "League Spartan";
     font-weight: 700px;
     line-height: 10px;
     letter-spacing: 1.93px;
+}
+
+.switcherButtonTextDesktop {
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -74,13 +77,17 @@
 }
 
 @media (min-width: 768px) {
-    .switcherButtonText {
+    .switcherButtonTextMobile {
+        display: none;
+    }
+    .switcherButtonTextDesktop {
+        display: block;
         color: #FFFFFF;
         font-size: 12px;
         font-family: "League Spartan";
         font-weight: 700px;
         line-height: 25px;
         letter-spacing: 2.57px;
-        /* padding-left: 25px; */
     }
+
 }

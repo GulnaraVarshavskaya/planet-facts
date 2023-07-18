@@ -7,9 +7,11 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   background-color: #070724;
+  background-image: url("/planets-fact-background.svg");
 }
 
 * {
+  /* border: 1px solid red; */
   box-sizing: border-box;
   padding: 0;
   margin: 0;

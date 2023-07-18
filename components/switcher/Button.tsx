@@ -6,6 +6,7 @@ interface ButtonProps {
   selectedElement?: string;
   count: string;
   planet: "venus" | "earth" | "mars";
+  children: string;
 }
 
 const Button: React.FC<ButtonProps & React.ComponentProps<"button">> = ({
@@ -27,7 +28,8 @@ const Button: React.FC<ButtonProps & React.ComponentProps<"button">> = ({
       <Heading3Numeric className={styles.switcherButtonNumber}>
         {count}
       </Heading3Numeric>
-      <Heading3 className={styles.switcherButtonText}>{children}</Heading3>
+      <Heading3 className={styles.switcherButtonTextMobile}>{children?.split(" ")[0]}</Heading3>
+      <Heading3 className={styles.switcherButtonTextDesktop}>{children}</Heading3>
     </button>
   );
 };
