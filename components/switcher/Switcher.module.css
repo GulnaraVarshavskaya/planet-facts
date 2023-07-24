@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
+    left: 0;
     top: 68px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0 24px;
@@ -11,8 +12,16 @@
 
 @media (min-width: 768px) {
     .switcherContainer {
+        width: 282px;
         display: block;
         position: static;
+        padding: 0;
         border-bottom: 1px solid transparent;
+    }
+}
+
+@media (min-width: 1440px) {
+    .switcherContainer {
+        width: 350px;
     }
 }

@@ -4,7 +4,7 @@
     border-bottom: 4px solid transparent;
     width: 80px;
     height: 100%;
-    padding: 20px 0;
+    padding: 20px 0 16px 0;
     background: transparent;
 }
 
@@ -40,14 +40,30 @@
 @media (min-width: 768px) {
     .switcherButton {
         border: 1px solid rgba(255, 255, 255, .2);
-        width: 350px;
-        height: 48px;
-        padding: 12px 28px 11px;
+        width: 280px;
+        height: 40px;
+        padding: 8px 20px 7px;
         background: transparent;
         align-items: center;
         display: flex;
+        margin-bottom: 16px;
+    }
+    .switcherButton:last-child {
+        margin-bottom: 0;
     }
   }
+
+@media (min-width: 1440px) {
+.switcherButton {
+    border: 1px solid rgba(255, 255, 255, .2);
+    width: 350px;
+    height: 48px;
+    padding: 12px 28px 11px;
+    background: transparent;
+    align-items: center;
+    display: flex;
+}
+}
 
 @media (min-width: 768px) {
     .switcherButton:hover {

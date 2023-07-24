@@ -22,26 +22,32 @@ const MobileNavbar: React.FC<{}> = ({}) => {
     {
       name: "earth",
       href: "#",
+      fill: "#545BFE",
     },
     {
       name: "mars",
       href: "#",
+      fill: "#FF6A45",
     },
     {
       name: "jupiter",
       href: "#",
+      fill: "#ECAD7A",
     },
     {
       name: "saturn",
       href: "#",
+      fill: "#FCCB6B",
     },
     {
       name: "uranus",
       href: "#",
+      fill: "#65F0D5",
     },
     {
       name: "neptune",
       href: "#",
+      fill: "#497EFA",
     },
   ];
   return (

@@ -13,6 +13,8 @@ const Switcher = ({ selectedElement, planet }: SwitcherProps) => {
       <Button
         selectedElement={selectedElement}
         count="01"
+        title="Overview"
+        titleMobile="Overview"
         planet={planet}
         onClick={() => {
           window.alert("Hi");
@@ -20,11 +22,13 @@ const Switcher = ({ selectedElement, planet }: SwitcherProps) => {
         // disabled={true}
         className="bigPadding"
       >
-        Overview
+       
       </Button>
       <Button
         selectedElement={selectedElement}
         count="02"
+        title="Internal Structure"
+        titleMobile="Structure"
         planet={planet}
         onClick={() => {
           window.alert("Hi");
@@ -37,13 +41,15 @@ const Switcher = ({ selectedElement, planet }: SwitcherProps) => {
       <Button
         selectedElement={selectedElement}
         count="03"
+        title="Surface Geology"
+        titleMobile="Surface"
         planet={planet}
         onClick={() => {
           window.alert("Hi");
         }}
         // disabled={true}
       >
-        Surface Geology
+        
       </Button>
     </div>
   );

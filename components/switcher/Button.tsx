@@ -5,14 +5,16 @@ import Heading3Numeric from "../typography/Heading3Numeric";
 interface ButtonProps {
   selectedElement?: string;
   count: string;
+  title: string;
+  titleMobile: string;
   planet: "venus" | "earth" | "mars";
-  children: string;
 }
 
 const Button: React.FC<ButtonProps & React.ComponentProps<"button">> = ({
-  children,
   selectedElement,
   count,
+  title,
+  titleMobile,
   planet,
   className,
   ...props
@@ -28,8 +30,8 @@ const Button: React.FC<ButtonProps & React.ComponentProps<"button">> = ({
       <Heading3Numeric className={styles.switcherButtonNumber}>
         {count}
       </Heading3Numeric>
-      <Heading3 className={styles.switcherButtonTextMobile}>{children?.split(" ")[0]}</Heading3>
-      <Heading3 className={styles.switcherButtonTextDesktop}>{children}</Heading3>
+      <Heading3 className={styles.switcherButtonTextMobile}>{titleMobile}</Heading3>
+      <Heading3 className={styles.switcherButtonTextDesktop}>{title}</Heading3>
     </button>
   );
 };

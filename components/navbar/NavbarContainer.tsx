@@ -9,13 +9,13 @@ import Navbar from "./DesktopNavbar";
 
 const NavbarContainer: React.FC<{}> = ({}) => {
   return (
-    <nav className={styles.navbarContainer}>
+    <div className={styles.navbarContainer}>
       <div className={styles.logoContainer}>
         <span>The planets</span>
       </div>
       <Navbar />
       <Hamburger/>
-    </nav>
+    </div>
   );
 };
 
