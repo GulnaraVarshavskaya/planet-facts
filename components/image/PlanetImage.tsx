@@ -2,22 +2,14 @@ import styles from "./PlanetImage.module.css"
 
 type PlanetImageProps = {
     image?: string,
-    urlMobile?: "/earth-mobile.svg" | "mercury-mobile.svg",
-    urlDesktop?: "/earth-desktop.svg",
-    urlTablet?: "/earth-tablet.svg",
+    imageUrl: string,
 }
 
-const PlanetImage = ({image, urlMobile, urlTablet, urlDesktop}: PlanetImageProps) => {
+const PlanetImage = ({image, imageUrl}: PlanetImageProps) => {
   return (
     <>
-    <div className={styles.imageMobileContainer}>
-      <img src={urlMobile} alt={image} />
-    </div>
-    <div className={styles.imageDesktopContainer}>
-        <img src={urlDesktop} alt={image} />
-    </div>
-    <div className={styles.imageTabletContainer}>
-        <img src={urlTablet} alt={image} />
+    <div className={styles.imageContainer}>
+        <img src={imageUrl} alt={image} />
     </div>
     </>
   )

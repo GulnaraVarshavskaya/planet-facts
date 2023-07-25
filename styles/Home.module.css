@@ -36,6 +36,12 @@
   .switcher {
     justify-content: flex-end;
   }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
 }
 
 @media (min-width: 1440px) {

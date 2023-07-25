@@ -4,6 +4,24 @@
 
 .planetInfoTitle {
     margin-bottom: 16px;
+    margin-top: 30px;
+}
+
+.planetInfoSource {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, .5) !important
+}
+
+.wikipediaLink {
+    margin-left: 8px;
+    font-weight: 700;
+    line-height: 14px;
+    text-decoration-line: underline;
+}
+
+.linkIcon {
+    margin-left: 8px;
+    vertical-align: middle;
 }
 
 @media (min-width: 768px) {
@@ -17,8 +35,9 @@
 @media (min-width: 1440px) {
 .planetInfoContainer {
     text-align: left;
-
-    /* margin: 126px 165px 40px 220px; */
+}
+.planetInfoSource  {
+    margin-top: 24px;
 }
 }
 
